@@ -25,4 +25,4 @@ let partOne fileName =
     let symbols = findAll lines symbolsRegex parseSymbol
     Seq.toList numbers, Seq.toList symbols
 
-partOne "fsharp/src/3/example.txt"
+partOne "src/3/example.txt"

@@ -28,4 +28,4 @@ let partOne fileName =
     |> Array.filter (fun (_,possible) -> possible = true)
     |> Array.sumBy fst
 
-partOne "fsharp/src/2/data.txt"
+partOne "src/2/data.txt"
