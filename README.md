@@ -9,3 +9,5 @@ Solutions so far:
 1. [Day 1](src/1/Program.fs)
 2. [Day 2](src/2/Program.fs)
 3. [Day 3](src/3/Program.fs) (incomplete)
+
+I've just been running all of the above in the F# REPL.
