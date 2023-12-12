@@ -39,13 +39,9 @@ let setup fileName symbolsRegex=
 let partOne =
     let symbolsRegex = Regex("[^.\d]")
     let numbers, symbols = setup "src/3/input.txt" symbolsRegex
-    numbers 
-    |> Seq.filter (isAdjToSymbol symbols) 
-    |> Seq.sumBy (fun x -> x.Number)
+    numbers |> Seq.filter (isAdjToSymbol symbols) |> Seq.sumBy (fun x -> x.Number)
 
 let partTwo =
     let symbolsRegex = Regex("\*")
     let numbers, symbols = setup "src/3/input.txt" symbolsRegex
-    symbols
-    |> Seq.map (isGear numbers)
-    |> Seq.sum
+    symbols |> Seq.map (isGear numbers) |> Seq.sum
